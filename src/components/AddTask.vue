@@ -1,0 +1,65 @@
+<template>
+     <div class="NewPost">
+        <h1>Add a Post</h1>
+        <label>Title</label>
+        <input type="text"  />
+        <label>Content</label>
+        <textarea rows="4"  />
+        <label>Author</label>
+        <select>
+            <option value="Max">Max</option>
+            <option value="Manu">Manu</option>
+        </select>
+        <button >Add Post</button>
+    </div> 
+</template>
+<script>
+export default {
+   name: "addNew"
+}
+</script>
+
+<style scoped>
+    .NewPost {
+        width: 80%;
+        margin: 20px auto;
+        border: 1px solid #eee;
+        box-shadow: 0 2px 3px #ccc;
+        text-align: center;
+    }
+
+    .NewPost label {
+        display: block;
+        margin: 10px auto;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .NewPost input,
+    .NewPost textarea,
+    .NewPost select {
+        display: block;
+        width: 80%;
+        box-sizing: border-box;
+        border: 1px solid black;
+        outline: none;
+        font: inherit;
+        margin: auto;
+    }
+
+    .NewPost button {
+        margin: 5px 0;
+        padding: 10px;
+        font: inherit;
+        border: 1px solid #fa923f;
+        background-color: transparent;
+        color: #fa923f;
+        cursor: pointer;
+    }
+
+    .NewPost button:hover,
+    .NewPost button:active {
+        color: white;
+        background-color: #fa923f;
+    }
+</style>
